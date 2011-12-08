@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.resources :recipes
+  #   map.resources :products
 
   map.root :controller => "recipes"
 

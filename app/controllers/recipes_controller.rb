@@ -21,6 +21,12 @@ class RecipesController < ApplicationController
     redirect_to @recipe
   end
   
+  def destroy
+      @recipe = Recipe.find(params[:id])
+      @recipe.delete
+      redirect_to recipes_path
+  end
+  
   def create
     @recipe = Recipe.create(params[:recipe])
     redirect_to root_url

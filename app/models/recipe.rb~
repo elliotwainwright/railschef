@@ -1,0 +1,6 @@
+class Recipe < ActiveRecord::Base
+
+  # Validations
+  Validates_presence_of :title
+
+end

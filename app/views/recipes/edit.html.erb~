@@ -1,19 +1,5 @@
 <div style="text-align:center;">
 <h1>Editing <%= @recipe.title %> Recipe</h1>
 </div>
-<div style="width:250px; margin:auto;">
-<% form_for @recipe do |f| %>
-<p>
-<%= f.label :title %>
-<br />
-<%= f.text_field :title %>
-</p>
-<p>
-<%= f.label :method %>
-<br />
-<%= f.text_area :method %>
-</p>
-<%= f.submit "Save Changes" %> | <%= link_to "Cancel", recipes_path %>
-<% end %>
-</div>
+<%= render :partial => 'form' %>
 

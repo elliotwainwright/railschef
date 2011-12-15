@@ -1,0 +1,15 @@
+
+<% form_for @recipe do |f| %>
+<p>
+<%= f.label :title %>
+<br />
+<%= f.text_field :title %>
+</p>
+<p>
+<%= f.label :method %>
+<br />
+<%= f.text_area :method %>
+</p>
+<%= f.submit "Save Changes" %> | <%= link_to "Cancel", recipes_path %>
+<% end %>
+

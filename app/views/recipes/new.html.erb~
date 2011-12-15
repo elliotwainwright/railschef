@@ -11,7 +11,7 @@
 <br />
 <%= f.text_area :method %>
 </p>
-<%= f.submit "Create Recipe" %> | <%= link_to "Cancel" recipes_path %>
+<%= f.submit "Create Recipe" %> | <%= link_to "Cancel", recipes_path %>
 <% end %>
 </div>
 

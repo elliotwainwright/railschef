@@ -15,9 +15,15 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
   
+  def update
+    @recipe = Recipe.find(params[:id])
+    @recipe.update_attributes(params[:recipe])
+    redirect_to @recipe
+  end
+  
   def create
     @recipe = Recipe.create(params[:recipe])
     redirect_to root_url
   end
-
+  
 end

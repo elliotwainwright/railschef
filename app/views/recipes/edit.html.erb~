@@ -1,5 +1,8 @@
+<div class="flash"
 <div style="text-align:center;">
 <h1>Editing <%= @recipe.title %> Recipe</h1>
 </div>
+<div style="width:250px; margin:auto;">
 <%= render :partial => 'form' %>
+</div>
 

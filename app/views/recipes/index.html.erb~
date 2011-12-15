@@ -1,3 +1,4 @@
+
 <div style="text-align:center;">
 <h1>All Recipes</h1>
 </div>
@@ -9,7 +10,6 @@
   </li>
  <% end %>
 </ul>
-
 <p>
 <%= link_to "Create a new recipe", new_recipe_path %>
 </p>

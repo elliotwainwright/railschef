@@ -2901,3 +2901,526 @@ Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 15:33:27) [GET]
 Rendering recipes/new
 Rendered recipes/_form (53.8ms)
 Completed in 60ms (View: 57, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2011-12-15 15:55:11) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "recipe"=>{"title"=>"", "method"=>""}}
+Redirected to http://localhost:3000/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:55:11) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:56:35) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:56:52) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 15:56:57) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.7ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:57:52) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:58:45) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 47ms (View: 44, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:00:25) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:01:24) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:01:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 16:01:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/edit
+Rendered recipes/_form (5.3ms)
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/recipes/2/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2011-12-15 16:01:34) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "id"=>"2", "recipe"=>{"title"=>"Egg Butty", "method"=>"Fry Egg, Butter Bread, Add Sauce, Eat....."}}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+  [4;36;1mRecipe Update (0.3ms)[0m   [0;1mUPDATE "recipes" SET "updated_at" = '2011-12-15 16:01:34', "method" = 'Fry Egg, Butter Bread, Add Sauce, Eat.....' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/recipes/2
+Completed in 88ms (DB: 0) | 302 Found [http://localhost/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:01:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:01:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 16:04:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/edit
+Rendered recipes/_form (5.1ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes/2/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2011-12-15 16:04:59) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "id"=>"2", "recipe"=>{"title"=>"Egg Butty", "method"=>"Fry Egg, Butter Bread, Add Sauce, Eat"}}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+  [4;35;1mRecipe Update (0.2ms)[0m   [0mUPDATE "recipes" SET "updated_at" = '2011-12-15 16:04:59', "method" = 'Fry Egg, Butter Bread, Add Sauce, Eat' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/recipes/2
+Completed in 96ms (DB: 0) | 302 Found [http://localhost/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:04:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:05:55) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:05:56) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (4.0ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2011-12-15 16:06:05) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "recipe"=>{"title"=>"boom", "method"=>"yum"}}
+  [4;36;1mRecipe Create (0.2ms)[0m   [0;1mINSERT INTO "recipes" ("created_at", "title", "method", "updated_at") VALUES('2011-12-15 16:06:05', 'boom', 'yum', '2011-12-15 16:06:05')[0m
+Redirected to http://localhost:3000/
+Completed in 87ms (DB: 0) | 302 Found [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:06:06) [GET]
+  [4;35;1mRecipe Load (0.7ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:06:08) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/11]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 16:06:10) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/edit
+Rendered recipes/_form (3.7ms)
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/11/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2011-12-15 16:06:14) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "id"=>"11", "recipe"=>{"title"=>"boom", "method"=>"yummy"}}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+  [4;35;1mRecipe Update (0.1ms)[0m   [0mUPDATE "recipes" SET "updated_at" = '2011-12-15 16:06:14', "method" = 'yummy' WHERE "id" = 11[0m
+Redirected to http://localhost:3000/recipes/11
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/recipes/11]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:06:15) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/11]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:06:17) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/11]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:07:00) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/11]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:07:01) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/11]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:07:03) [GET]
+  [4;36;1mRecipe Load (0.6ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:07:13) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:08:08) [GET]
+  [4;36;1mRecipe Load (0.6ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:08:18) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:08:19) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:09:18) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:09:22) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:10:16) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (4.2ms)
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:11:03) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (4.2ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2011-12-15 16:11:07) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "recipe"=>{"title"=>"", "method"=>""}}
+Redirected to http://localhost:3000/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:11:07) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:11:17) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:11:19) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2011-12-15 16:11:23) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "recipe"=>{"title"=>"rgqetg", "method"=>"qetgqetg"}}
+  [4;36;1mRecipe Create (0.2ms)[0m   [0;1mINSERT INTO "recipes" ("created_at", "title", "method", "updated_at") VALUES('2011-12-15 16:11:23', 'rgqetg', 'qetgqetg', '2011-12-15 16:11:23')[0m
+Redirected to http://localhost:3000/
+Completed in 72ms (DB: 0) | 302 Found [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:11:23) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:11:46) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes/12]
+
+
+Processing RecipesController#destroy (for 127.0.0.1 at 2011-12-15 16:11:49) [DELETE]
+  Parameters: {"authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "id"=>"12"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 12) [0m
+  [4;36;1mRecipe Delete all (100.6ms)[0m   [0;1mDELETE FROM "recipes" WHERE ("id" IN (12)) [0m
+Redirected to http://localhost:3000/recipes
+Completed in 107ms (DB: 101) | 302 Found [http://localhost/recipes/12]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:11:49) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:12:10) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:12:22) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:12:37) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:13:52) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:14:32) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:14:47) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:15:15) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:16:01) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:16:12) [GET]
+  [4;36;1mRecipe Load (0.7ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:16:18) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:16:28) [GET]
+  [4;36;1mRecipe Load (0.6ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:16:32) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/11]
+
+
+Processing RecipesController#destroy (for 127.0.0.1 at 2011-12-15 16:16:34) [DELETE]
+  Parameters: {"authenticity_token"=>"6rIOHMcrO9J/pzMcTLkNAi7Wk/hP+P/5QjecYaJ2tEs=", "id"=>"11"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 11) [0m
+  [4;35;1mRecipe Delete all (62.7ms)[0m   [0mDELETE FROM "recipes" WHERE ("id" IN (11)) [0m
+Redirected to http://localhost:3000/recipes
+Completed in 68ms (DB: 63) | 302 Found [http://localhost/recipes/11]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:16:34) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:17:10) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (3.9ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:17:15) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 16:17:16) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.7ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:17:19) [GET]
+  [4;36;1mRecipe Load (0.6ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:17:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes/4]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:17:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/4]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:17:52) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/4]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 16:17:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering recipes/edit
+Rendered recipes/_form (4.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/recipes/4/edit]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:18:00) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 16:18:21) [GET]
+  [4;36;1mRecipe Load (0.6ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 16:18:25) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/recipes/6]

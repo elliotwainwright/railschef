@@ -10,6 +10,7 @@
 <br />
 <%= f.text_area :method %>
 </p>
-<%= f.submit "Save Changes" %> | <%= link_to "Cancel", recipes_path %>
+<hr>
+<%= f.submit "Save" %> | <%= link_to "Cancel", recipes_path %>
 <% end %>
 

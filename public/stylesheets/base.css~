@@ -1,0 +1,23 @@
+.flash {
+width: 100%;
+border: 1px solid #88bfe8;
+font-family:"Helvetica";
+}
+
+h1, p, li {
+color: #88bfe8;
+font-family:"Helvetica";
+}
+
+a:link, a:visited {
+font-size:20px;
+color: #88bfe8;
+font-family:"Helvetica";
+text-decoration: none;
+}
+
+a:hover {
+color: #1E5799;
+font-family:"Helvetica";
+text-decoration: underline;
+}
